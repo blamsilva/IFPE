@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Exercício 09 - Formulário</title>
+</head>
+<body>
+	<header>
+		<h1>Exercício 09 - Formulário</h1>
+		<h2><code>&lt;input type="text" /&gt;</code>, <code>&lt;input type="password" /&gt;</code> e <code>&lt;input type="email" &gt;</code></h2>
+	</header><hr>
+	<form method="post" action="">
+		<fieldset>
+			<legend>Login de usuário</legend>
+			<label for="usuario">Usuário:<input type="text" id="usuario" size="15" maxlength="10" /></label>
+			<label for="senha">Senha: <input type="password" id="senha" size="15" maxlength="10"/></label>
+			<input type="submit" value="ok" />
+		</fieldset>
+		<fieldset>
+			<legend>Dados Cadastrais</legend>
+			<label for="email">E-mail:<input type="email" id="email" size="15" maxlength="60"/></label>
+			<! --este caompo só envia dados mediante endereco de email valido! nao funciona no Safari, mas o safari no iPhone reconhece o tipo de email, e altera o teclado na tela para combinar com ele e adiciona @-->
+			<input type="submit" value="ok" />
+		</fieldset>
+		<fieldset>
+		<legend>Buscar</legend>
+		<label for="busca">busca:<input type="search" id="busca" size="15" /></label>
+		</fieldset>
+	</form>
+	<footer><address>copyright &copy;Carlos José.</address></footer>
+</body>
+</html>
